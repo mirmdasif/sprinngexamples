@@ -1,0 +1,5 @@
+rootProject.name = 'springmvc'
+
+include 'springmvcjava'
+include 'springmvcxml'
+
