@@ -8,6 +8,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  * @since 1/31/17.
  */
 @EnableWebMvc
-@ComponentScan("net.asifhossain.springmvcjava")
-public class WebConfig {
+@ComponentScan("net.asifhossain.springmvcjava.web")
+public class MvcConfig {
 }

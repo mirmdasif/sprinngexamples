@@ -17,6 +17,6 @@ public class DispatcherServletInitializer extends AbstractAnnotationConfigDispat
     }
 
     protected Class<?>[] getServletConfigClasses() {
-        return new Class<?>[]{WebConfig.class};
+        return new Class<?>[]{MvcConfig.class};
     }
 }
