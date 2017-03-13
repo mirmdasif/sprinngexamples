@@ -1,27 +1,27 @@
 package net.asifhossain.springsecurityauthentication.config.security;
 
-import org.springframework.context.annotation.Bean;
+import net.asifhossain.springsecurityauthentication.dao.UserDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
 /**
  * @author asif.hossain
  * @since 2/8/17.
  */
 @EnableWebSecurity
+@ComponentScan("net.asifhossain.springsecurityauthentication.dao")
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Bean
+    @Autowired
+    UserDao userDao;
+
     @Override
     protected UserDetailsService userDetailsService() {
-        InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
-        manager.createUser(User.withUsername("user").password("password").roles("USER").build());
-
-        return manager;
+        return userDao;
     }
 
     @Override
