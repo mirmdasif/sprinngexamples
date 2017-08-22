@@ -14,5 +14,9 @@ Example
 
 Todo's
 -----
+- [X] Bootstrap Spring MVC Java Config
+- [X] Bootstrap Spring MVC XML Config
+- [X] Spring Security Authentication/Authorization.
+- [X] Spring Multi-part file upload.
 - [ ] Spring Profile
 - [ ] Spring Reactive Web
