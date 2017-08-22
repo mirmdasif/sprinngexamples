@@ -14,5 +14,5 @@ Example
 
 Todo's
 -----
-- Spring Profile
--
+- [ ] Spring Profile
+- [ ] Spring Reactive Web
