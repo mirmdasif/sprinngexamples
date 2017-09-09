@@ -4,3 +4,5 @@ include 'springmvcjava'
 include 'springmvcxml'
 include 'springsecurityauthentication'
 include 'springmvcmultipartfileupload'
+include 'exceptionhandling'
+

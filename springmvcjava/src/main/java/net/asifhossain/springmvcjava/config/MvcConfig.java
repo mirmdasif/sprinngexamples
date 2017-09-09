@@ -12,7 +12,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  * @since 1/31/17.
  */
 @EnableWebMvc
-@ComponentScan("net.asifhossain.springmvcjava.web")
+@ComponentScan("net.asifhossain")
 @PropertySource("classpath:${spring.profile.active}.properties")
 public class MvcConfig {
     @Bean
