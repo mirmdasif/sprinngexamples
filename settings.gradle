@@ -6,4 +6,5 @@ include 'springsecurityauthentication'
 include 'springmvcmultipartfileupload'
 include 'exceptionhandling'
 include 'jpaonetomany'
+include 'jpamanytomany'
 
