@@ -17,7 +17,7 @@ public class AopExampleAppTest {
     @Test
     public void testContextLoads() {
         try {
-            exceptionalService.thorowException();
+            exceptionalService.throwException();
         } catch (Exception e) {
 
         }

@@ -17,7 +17,7 @@ public class AopExampleApp implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         try {
-            service.thorowException();
+            service.throwException();
         } catch (Exception ex) {
             // Do nothing Since
         }
