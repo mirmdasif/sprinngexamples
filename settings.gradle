@@ -9,4 +9,5 @@ include 'jpaonetomany'
 include 'jpamanytomany'
 include 'springmvcjsp'
 include 'aopexceptionhandling'
+include 'springproperties'
 
