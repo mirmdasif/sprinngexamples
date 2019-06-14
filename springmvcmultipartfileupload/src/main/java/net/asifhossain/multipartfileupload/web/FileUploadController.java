@@ -21,7 +21,10 @@ public class FileUploadController {
     @RequestMapping(method = RequestMethod.POST)
     public String uploadFile(@RequestParam("file") MultipartFile file) {
 
-        System.out.println(file.getName());
+        InputStream fileStream = multipartFile.getInputStream();
+        File targetFile = new File("/tmp/targetFile.csv");
+        FileUtils.copyInputStreamToFile(fileStream, targetFile);
+        
         return "home";
     }
 }
